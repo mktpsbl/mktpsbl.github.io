@@ -1,7 +1,7 @@
 baseURL: "https://sprooma.com"
 languageCode: "en-us"
 title: "Sprooma's Tech Essays"
-theme: "paper"
+
 
 params:
   description: "Deep dives into technical efficiency, hardware architectures, and consumer workflows."
