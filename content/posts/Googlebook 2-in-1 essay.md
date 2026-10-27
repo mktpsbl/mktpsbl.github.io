@@ -1,6 +1,6 @@
 ---
 title: "I Thought Google Books Could Finally Be the Endgame 2-in-1; Instead, Google Is Recreating the Surface Pro Problem"
-date: 2026-10-25
+date: 2026-10-26
 ---
 
 
