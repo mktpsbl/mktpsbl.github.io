@@ -1,10 +1,8 @@
 ---
-title: "The Reality of Building on the Open Web"
+title: "I Thought Google Books Could Finally Be the Endgame 2-in-1; Instead, Google Is Recreating the Surface Pro Problem"
 date: 2026-10-26
 ---
 
-
-I thought Googlebooks would finally be the endgame 2-in-1. Instead, Google is recreating the Surface Pro problem.
 
 
 
