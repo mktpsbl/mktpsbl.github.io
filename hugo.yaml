@@ -6,3 +6,5 @@ title: "Sprooma Tech"
 params:
   description: "My opinions and preferences about consumer tech."
   author: "Sprooma"
+
+disableKinds: ["taxonomy", "term"]
