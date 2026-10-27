@@ -1,0 +1,11 @@
+name = "Paper"
+license = "MIT"
+licenselink = "https://github.com"
+description = "A simple, clean, and elegant theme for personal blogs and portfolios."
+homepage = "https://github.com"
+tags = ["blog", "minimalist", "responsive", "clean", "dark-mode"]
+features = ["dark-mode", "responsive"]
+
+[author]
+  name = "nanoxia"
+  homepage = "https://github.com"
