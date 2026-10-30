@@ -17,13 +17,9 @@
     <a class="back-link" href="{{ .Site.BaseURL }}">&larr; Back to Home</a>
     <main>
         <header>
-            <header>
-      <a href="/">
-        <img src="/favicon.jpg" alt="sprooma" style="height: 40px; width: auto; border-radius: 6px; display: block; margin-bottom: 1rem;" />
-      </a>
-      <h1>{{ .Title }}</h1>
-      <div class="meta">Published on {{ .Date.Format "January 2, 2006" }} by {{ .Site.Params.author }}</div>
-    </header>
+            <a href="/">
+                <img src="/favicon.jpg" alt="sprooma" style="height: 40px; width: auto; border-radius: 6px; display: block; margin-bottom: 1rem;" />
+            </a>
             <h1>{{ .Title }}</h1>
             <div class="meta">Published on {{ .Date.Format "January 2, 2006" }} by {{ .Site.Params.author }}</div>
         </header>
