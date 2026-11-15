@@ -11,6 +11,9 @@
         @media (prefers-color-scheme: dark) { .back-link { color: #8ab4f8; } }
         h1 { font-size: 2.4rem; line-height: 1.2; margin-bottom: 0.5rem; font-weight: 700; }
         .meta { font-size: 0.9rem; color: #777; margin-bottom: 3rem; }
+        article img { max-width: 100%; height: auto; border-radius: 4px; }
+        .comments-section { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #eaeaea; }
+        @media (prefers-color-scheme: dark) { .comments-section { border-top-color: #2a2a2a; } }
     </style>
 </head>
 <body>
@@ -26,6 +29,24 @@
         <article>
             {{ .Content }}
         </article>
+
+        <section class="comments-section">
+            <script src="https://giscus.app/client.js"
+                    data-repo="mktpsbl/mktpsbl.github.io"
+                    data-repo-id="R_kgDOVYu8QA"
+                    data-category="Announcements"
+                    data-category-id="DIC_kwDOVYu8QM4DLKeU"
+                    data-mapping="pathname"
+                    data-strict="0"
+                    data-reactions-enabled="1"
+                    data-emit-metadata="0"
+                    data-input-position="bottom"
+                    data-theme="preferred_color_scheme"
+                    data-lang="en"
+                    crossorigin="anonymous"
+                    async>
+            </script>
+        </section>
     </main>
 </body>
 </html>
