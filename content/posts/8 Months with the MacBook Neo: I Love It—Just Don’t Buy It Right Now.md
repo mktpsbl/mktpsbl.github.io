@@ -1,6 +1,6 @@
 ---
-title: "I Think I Would Want a TV That Apple Makes"
-date: 2026-10-29
+title: "8 Months with the MacBook Neo: I Absolutely Love It—Just Don’t Buy It Right Now"
+date: 2026-11-14
 ---
 
 I pre-ordered the Macbook Neo the same day that it was announced, which I feel very lucky since it got backordered pretty quick after it was released initially. I’ve been using it as my main and only laptop for the past 8 months, and in general I honestly really really like it. (do note that I bought it before the price hikes)
