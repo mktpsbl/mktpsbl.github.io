@@ -3,44 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Site.Title }}</title>
-    <link rel="icon" type="image/jpeg" href="/favicon.jpg">
-
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 650px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #333; background-color: #fcfcfc; }
+        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 650px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; background-color: #fcfcfc; font-size: 1.1rem; }
         @media (prefers-color-scheme: dark) { body { color: #e0e0e0; background-color: #121212; } a { color: #8ab4f8; } }
-        .site-heading { display: flex; align-items: center; gap: 14px; margin-bottom: 0.5rem; }
-        .site-logo-link { display: flex; align-items: center; text-decoration: none; flex-shrink: 0; }
-        .site-logo { height: 42px; width: 42px; border-radius: 8px; object-fit: cover; }
-        h1 { font-size: 2.2rem; font-weight: 700; margin: 0; }
-        .description { font-size: 1.1rem; color: #666; margin-bottom: 3rem; }
-        @media (prefers-color-scheme: dark) { .description { color: #aaa; } }
-        .post-item { margin-bottom: 2rem; list-style: none; padding-left: 0; }
-        .post-title { font-size: 1.4rem; font-weight: 600; text-decoration: none; color: inherit; }
-        .post-title:hover { text-decoration: underline; }
-        .post-date { font-size: 0.9rem; color: #888; display: block; margin-top: 0.2rem; }
-        ul { padding-left: 0; }
+        .back-link { display: inline-block; margin-bottom: 2rem; text-decoration: none; color: #0066cc; font-size: 0.95rem; }
+        @media (prefers-color-scheme: dark) { .back-link { color: #8ab4f8; } }
+        h1 { font-size: 2.4rem; line-height: 1.2; margin-bottom: 0.5rem; font-weight: 700; }
+        .meta { font-size: 0.9rem; color: #777; margin-bottom: 3rem; }
+        article img { max-width: 100%; height: auto; border-radius: 4px; }
+        .comments-section { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #eaeaea; }
+        @media (prefers-color-scheme: dark) { .comments-section { border-top-color: #2a2a2a; } }
     </style>
 </head>
 <body>
-    <header>
-        <div class="site-heading">
-            <a href="/" class="site-logo-link">
-                <img src="/favicon.jpg" alt="{{ .Site.Title }}" class="site-logo">
-            </a>
-            <h1>{{ .Site.Title }}</h1>
-        </div>
-        <p class="description">{{ .Site.Params.description }}</p>
-    </header>
+    <a class="back-link" href="{{ .Site.BaseURL }}">&larr; Back to Home</a>
     <main>
-        <ul>
-            {{ range .Site.RegularPages }}
-            <li class="post-item">
-                <a class="post-title" href="{{ .Permalink }}">{{ .Title }}</a>
-                <span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
-            </li>
-            {{ end }}
-        </ul>
+        <header>
+            <a href="/">
+                <img src="/favicon.jpg" alt="sprooma" style="height: 40px; width: auto; border-radius: 6px; display: block; margin-bottom: 1rem;" />
+            </a>
+            <h1>{{ .Title }}</h1>
+            <div class="meta">Published on {{ .Date.Format "January 2, 2006" }} by {{ .Site.Params.author }}</div>
+        </header>
+        <article>
+            {{ .Content }}
+        </article>
+
+        <section class="comments-section">
+            <script src="https://giscus.app/client.js"
+                    data-repo="mktpsbl/mktpsbl.github.io"
+                    data-repo-id="R_kgDOVYu8QA"
+                    data-category="Announcements"
+                    data-category-id="DIC_kwDOVYu8QM4DLKeU"
+                    data-mapping="pathname"
+                    data-strict="0"
+                    data-reactions-enabled="1"
+                    data-emit-metadata="0"
+                    data-input-position="bottom"
+                    data-theme="preferred_color_scheme"
+                    data-lang="en"
+                    crossorigin="anonymous"
+                    async>
+            </script>
+        </section>
     </main>
 </body>
 </html>
